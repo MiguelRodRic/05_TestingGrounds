@@ -5,8 +5,17 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
+#ifndef TESTINGGROUNDS_ChooseNextWaypoint_generated_h
+	#include "ChooseNextWaypoint.h"
+#endif
+#ifndef TESTINGGROUNDS_PatrolRoute_generated_h
+	#include "PatrolRoute.h"
+#endif
 #ifndef TESTINGGROUNDS_TP_ThirdPersonCharacter_generated_h
 	#include "TP_ThirdPerson/TP_ThirdPersonCharacter.h"
+#endif
+#ifndef TESTINGGROUNDS_PatrollingGuard_generated_h
+	#include "PatrollingGuard.h"
 #endif
 #ifndef TESTINGGROUNDS_TP_ThirdPersonGameMode_generated_h
 	#include "TP_ThirdPerson/TP_ThirdPersonGameMode.h"

@@ -15,16 +15,116 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1TestingGrounds() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	AIMODULE_API class UClass* Z_Construct_UClass_UBTTaskNode();
+	AIMODULE_API class UScriptStruct* Z_Construct_UScriptStruct_FBlackboardKeySelector();
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 
+	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_UChooseNextWaypoint_NoRegister();
+	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_UChooseNextWaypoint();
+	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_UPatrolRoute_NoRegister();
+	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_UPatrolRoute();
 	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_ATP_ThirdPersonCharacter_NoRegister();
 	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_ATP_ThirdPersonCharacter();
+	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_APatrollingGuard_NoRegister();
+	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_APatrollingGuard();
 	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_ATP_ThirdPersonGameMode_NoRegister();
 	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_ATP_ThirdPersonGameMode();
 	TESTINGGROUNDS_API class UPackage* Z_Construct_UPackage__Script_TestingGrounds();
+	void UChooseNextWaypoint::StaticRegisterNativesUChooseNextWaypoint()
+	{
+	}
+	UClass* Z_Construct_UClass_UChooseNextWaypoint_NoRegister()
+	{
+		return UChooseNextWaypoint::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UChooseNextWaypoint()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UBTTaskNode();
+			Z_Construct_UPackage__Script_TestingGrounds();
+			OuterClass = UChooseNextWaypoint::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20100080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_WaypointKey = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("WaypointKey"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WaypointKey, UChooseNextWaypoint), 0x0020080000000001, Z_Construct_UScriptStruct_FBlackboardKeySelector());
+				UProperty* NewProp_IndexKey = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("IndexKey"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(IndexKey, UChooseNextWaypoint), 0x0020080000000001, Z_Construct_UScriptStruct_FBlackboardKeySelector());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<UChooseNextWaypoint> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("ChooseNextWaypoint.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("ChooseNextWaypoint.h"));
+				MetaData->SetValue(NewProp_WaypointKey, TEXT("Category"), TEXT("Blackboard"));
+				MetaData->SetValue(NewProp_WaypointKey, TEXT("ModuleRelativePath"), TEXT("ChooseNextWaypoint.h"));
+				MetaData->SetValue(NewProp_IndexKey, TEXT("Category"), TEXT("Blackboard"));
+				MetaData->SetValue(NewProp_IndexKey, TEXT("ModuleRelativePath"), TEXT("ChooseNextWaypoint.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UChooseNextWaypoint, 3248243125);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UChooseNextWaypoint(Z_Construct_UClass_UChooseNextWaypoint, &UChooseNextWaypoint::StaticClass, TEXT("/Script/TestingGrounds"), TEXT("UChooseNextWaypoint"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UChooseNextWaypoint);
+	void UPatrolRoute::StaticRegisterNativesUPatrolRoute()
+	{
+	}
+	UClass* Z_Construct_UClass_UPatrolRoute_NoRegister()
+	{
+		return UPatrolRoute::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UPatrolRoute()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_TestingGrounds();
+			OuterClass = UPatrolRoute::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_PatrolPoints = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("PatrolPoints"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(PatrolPoints, UPatrolRoute), 0x0040000000000801);
+				UProperty* NewProp_PatrolPoints_Inner = new(EC_InternalUseOnlyConstructor, NewProp_PatrolPoints, TEXT("PatrolPoints"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_AActor_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<UPatrolRoute> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PatrolRoute.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PatrolRoute.h"));
+				MetaData->SetValue(NewProp_PatrolPoints, TEXT("Category"), TEXT("Patrol Route"));
+				MetaData->SetValue(NewProp_PatrolPoints, TEXT("ModuleRelativePath"), TEXT("PatrolRoute.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UPatrolRoute, 2230484952);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UPatrolRoute(Z_Construct_UClass_UPatrolRoute, &UPatrolRoute::StaticClass, TEXT("/Script/TestingGrounds"), TEXT("UPatrolRoute"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UPatrolRoute);
 	void ATP_ThirdPersonCharacter::StaticRegisterNativesATP_ThirdPersonCharacter()
 	{
 	}
@@ -86,6 +186,50 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	IMPLEMENT_CLASS(ATP_ThirdPersonCharacter, 2032111238);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATP_ThirdPersonCharacter(Z_Construct_UClass_ATP_ThirdPersonCharacter, &ATP_ThirdPersonCharacter::StaticClass, TEXT("/Script/TestingGrounds"), TEXT("ATP_ThirdPersonCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATP_ThirdPersonCharacter);
+	void APatrollingGuard::StaticRegisterNativesAPatrollingGuard()
+	{
+	}
+	UClass* Z_Construct_UClass_APatrollingGuard_NoRegister()
+	{
+		return APatrollingGuard::StaticClass();
+	}
+	UClass* Z_Construct_UClass_APatrollingGuard()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ATP_ThirdPersonCharacter();
+			Z_Construct_UPackage__Script_TestingGrounds();
+			OuterClass = APatrollingGuard::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_PatrolPoints = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("PatrolPoints"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(PatrolPoints, APatrollingGuard), 0x0010000000000801);
+				UProperty* NewProp_PatrolPoints_Inner = new(EC_InternalUseOnlyConstructor, NewProp_PatrolPoints, TEXT("PatrolPoints"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_AActor_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<APatrollingGuard> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("PatrollingGuard.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("PatrollingGuard.h"));
+				MetaData->SetValue(NewProp_PatrolPoints, TEXT("Category"), TEXT("Patrol Route"));
+				MetaData->SetValue(NewProp_PatrolPoints, TEXT("ModuleRelativePath"), TEXT("PatrollingGuard.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(APatrollingGuard, 1939093762);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_APatrollingGuard(Z_Construct_UClass_APatrollingGuard, &APatrollingGuard::StaticClass, TEXT("/Script/TestingGrounds"), TEXT("APatrollingGuard"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(APatrollingGuard);
 	void ATP_ThirdPersonGameMode::StaticRegisterNativesATP_ThirdPersonGameMode()
 	{
 	}
@@ -133,8 +277,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/TestingGrounds")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x05045A7A;
-			Guid.B = 0xA14CC5E4;
+			Guid.A = 0x87364118;
+			Guid.B = 0xFE5F8259;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

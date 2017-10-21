@@ -100,7 +100,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_PatrolPoints = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("PatrolPoints"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(PatrolPoints, UPatrolRoute), 0x0040000000000801);
+				UProperty* NewProp_PatrolPoints = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("PatrolPoints"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(PatrolPoints, UPatrolRoute), 0x0040000000000001);
 				UProperty* NewProp_PatrolPoints_Inner = new(EC_InternalUseOnlyConstructor, NewProp_PatrolPoints, TEXT("PatrolPoints"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_AActor_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				static TCppClassTypeInfo<TCppClassTypeTraits<UPatrolRoute> > StaticCppClassTypeInfo;
@@ -120,7 +120,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPatrolRoute, 2230484952);
+	IMPLEMENT_CLASS(UPatrolRoute, 3947037288);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UPatrolRoute(Z_Construct_UClass_UPatrolRoute, &UPatrolRoute::StaticClass, TEXT("/Script/TestingGrounds"), TEXT("UPatrolRoute"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UPatrolRoute);
 	void ATP_ThirdPersonCharacter::StaticRegisterNativesATP_ThirdPersonCharacter()
@@ -231,7 +231,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/TestingGrounds")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x7BBEE901;
+			Guid.A = 0x82E333F4;
 			Guid.B = 0x12D844E2;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

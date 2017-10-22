@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\TestingGrounds.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{332CD0B8-08A4-4221-A452-F726BEEA642B}</UniqueIdentifier>
+			<UniqueIdentifier>{426582A7-ED92-433B-B21D-3AC399DECAD8}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\TestingGrounds.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{DDD39609-3354-4922-AF07-02C7C6536F02}</UniqueIdentifier>
+			<UniqueIdentifier>{FDD1D894-4442-4BF8-A6A5-85DCFEC90567}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\TestingGrounds">
-			<UniqueIdentifier>{17FAB6F0-1D50-4D05-8CB2-AB29F75C42FA}</UniqueIdentifier>
+			<UniqueIdentifier>{6B0850A2-03D8-46FD-8B0F-248262BBA215}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TestingGrounds\ChooseNextWaypoint.cpp">
 			<Filter>Source\TestingGrounds</Filter>
@@ -55,7 +55,7 @@
 			<Filter>Source\TestingGrounds</Filter>
 		</ClInclude >
 		<Filter Include="Source\TestingGrounds\TP_ThirdPerson">
-			<UniqueIdentifier>{C29EE0CF-538E-4AFF-AC32-4C7363EFA289}</UniqueIdentifier>
+			<UniqueIdentifier>{75B71363-BBFE-47BE-8825-6DC1097015FB}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\TestingGrounds\TP_ThirdPerson\TP_ThirdPerson.h">
 			<Filter>Source\TestingGrounds\TP_ThirdPerson</Filter>
